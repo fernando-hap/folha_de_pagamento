@@ -9,6 +9,20 @@ public abstract class Funcionario {
 		this.codigo = codigo;
 	}
 	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+
+
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+
+
 	void gerarContraCheque() {
 		
 	}
@@ -20,6 +34,8 @@ public abstract class Funcionario {
 	public void exibir() {
 		
 	}
+	
+	
 	
 	
 }
