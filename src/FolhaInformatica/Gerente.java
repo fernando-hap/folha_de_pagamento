@@ -4,8 +4,8 @@ import FolhaGenerica.Mensalista;
 
 public class Gerente extends Mensalista {
 
-	public Gerente(String nome, int codigo) {
-		super(nome, codigo);
+	public Gerente(String nome, int codigo, double salarioMensal) {
+		super(nome, codigo, salarioMensal);
 	}
 
 	protected String cargo() {

@@ -13,17 +13,21 @@ public abstract class Empresa {
 	}
 	
 	public void gerarFolha() {
-		
+		for(int i = 0; i < listaFuncionarios.size(); i++) {
+			listaFuncionarios.get(i).gerarContraCheque();
+		}
 	}
 	
 	public void exibirFuncionario(int codigo) {
 		
 	}
 	
-	public boolean inserirFuncionario(Funcionario f) {
+	public boolean inserirFuncionario(Funcionario f) throws FuncionarioExistente {
 		for(int i = 0; i < listaFuncionarios.size(); i++) {
-			if(listaFuncionarios.get(i).getCodigo() == f.getCodigo())
-				return false;
+			if(listaFuncionarios.get(i).getCodigo() == f.getCodigo()) {
+				FuncionarioExistente e = new FuncionarioExistente("Funcionário código " + f.getCodigo() + " já existe.");
+				throw(e);
+			}
 		}
 		listaFuncionarios.add(f);
 		return true;

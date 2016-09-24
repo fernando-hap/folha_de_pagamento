@@ -24,7 +24,7 @@ public abstract class Funcionario {
 
 
 	void gerarContraCheque() {
-		
+		exibir();
 	}
 	
 	protected abstract double salario();
@@ -32,7 +32,7 @@ public abstract class Funcionario {
 	protected abstract String cargo();
 	
 	public void exibir() {
-		
+		System.out.println("CÓDIGO: " + codigo + " - NOME: " + nome + " - CARGO: " + cargo() + " - SALÁRIO: " + salario());
 	}
 	
 	

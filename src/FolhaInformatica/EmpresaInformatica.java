@@ -1,43 +1,52 @@
 package FolhaInformatica;
 
 import FolhaGenerica.Empresa;
+import FolhaGenerica.FuncionarioExistente;
 
 public class EmpresaInformatica extends Empresa {
 
 	public EmpresaInformatica(String nome) {
 		super(nome);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public boolean inserirProgramador(Programador p) {
 		try {
 			super.inserirFuncionario(p);	
 			return true;
-			
-			
-		} catch (Throwable ex) {
-			System.out.println("Erro na ao inserir programador: "+ex.toString());
+		} catch (FuncionarioExistente e) {
+			System.out.println("Erro ao inserir programador: "+e.getMessage());
 			return false;
 		}
 	}
 	
-	public boolean inserirAnalista() {
+	public boolean inserirAnalista(Analista a) {
 		try {
-			return true;
-			
-			
-		} catch (Throwable ex) {
-			System.out.println("Erro na ao inserir Analista: "+ex.toString());
+			super.inserirFuncionario(a);	
+			return true;			
+		} catch (FuncionarioExistente e) {
+			System.out.println("Erro ao inserir Analista: "+e.getMessage());
 			return false;
 		}
 	}
 	
-	public boolean inserirGerente() {
-		return true;
+	public boolean inserirGerente(Gerente g) {
+		try {
+			super.inserirFuncionario(g);	
+			return true;			
+		} catch (FuncionarioExistente e) {
+			System.out.println("Erro ao inserir Gerente: "+e.getMessage());
+			return false;
+		}
 	}
 	
-	public boolean inserirDiretor() {
-		return true;
+	public boolean inserirDiretor(Diretor d) {
+		try {
+			super.inserirFuncionario(d);	
+			return true;			
+		} catch (FuncionarioExistente e) {
+			System.out.println("Erro ao inserir Diretor: "+e.getMessage());
+			return false;
+		}
 	}
 
 }
