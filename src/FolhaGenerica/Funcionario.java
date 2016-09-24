@@ -1,6 +1,12 @@
 package FolhaGenerica;
 
-public abstract class Funcionario {
+import java.io.Serializable;
+
+public abstract class Funcionario implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String nome;
 	private int codigo;
 	

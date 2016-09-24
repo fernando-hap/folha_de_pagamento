@@ -1,9 +1,15 @@
 package FolhaGenerica;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Empresa {
+public abstract class Empresa implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private String nome;
 	private List<Funcionario> listaFuncionarios;
 	
