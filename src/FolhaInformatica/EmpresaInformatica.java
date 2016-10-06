@@ -5,6 +5,11 @@ import FolhaGenerica.FuncionarioExistente;
 
 public class EmpresaInformatica extends Empresa {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8883679173820401288L;
+
 	public EmpresaInformatica(String nome) {
 		super(nome);
 	}

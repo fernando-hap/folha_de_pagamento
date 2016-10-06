@@ -16,6 +16,7 @@ public class Teste {
 		if(empresaInformatica.inserirGerente(henrique)) System.out.println("Gerente " + henrique.getNome() + " inserido");
 		Diretor carlos = new Diretor("Carlos", 4, 10000);
 		if(empresaInformatica.inserirDiretor(carlos)) System.out.println("Diretor " + carlos.getNome() + " inserido");
-		empresaInformatica.gerarFolha();		
+		empresaInformatica.gerarFolhaPagamento();
+		empresaInformatica.gerarFolhaPagamentoEmArquivo();
 	}
 }

@@ -30,7 +30,7 @@ public abstract class Funcionario implements Serializable {
 
 
 	void gerarContraCheque() {
-		exibir();
+		exibir();			
 	}
 	
 	protected abstract double salario();

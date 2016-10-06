@@ -1,0 +1,4 @@
+CÓDIGO: 2 - NOME: Gustavo - CARGO: Analista - SALÁRIO: 4000.0
+CÓDIGO: 1 - NOME: Fernando - CARGO: Programador - SALÁRIO: 2400.0
+CÓDIGO: 4 - NOME: Carlos - CARGO: Diretor - SALÁRIO: 30000.0
+CÓDIGO: 3 - NOME: Henrique - CARGO: Gerente - SALÁRIO: 11000.0
