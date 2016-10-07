@@ -1,5 +1,5 @@
 WeDeliver;
-1;Programador;Fernando;15,160
+1;Programador;Fernando;15;160
 2;Analista;Gustavo;25;160
-3;Gerente;Henrique;6000
-4;Diretor;Carlos;10000
+3;Gerente;Henrique;6000;0
+4;Diretor;Carlos;10000;0

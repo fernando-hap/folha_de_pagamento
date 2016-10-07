@@ -25,13 +25,17 @@ public abstract class Empresa implements Serializable {
 	}
 	
 	public void exibirFuncionario(int codigo) {
-		
+		for(int i = 0; i < listaFuncionarios.size(); i++) {
+			if(listaFuncionarios.get(i).getCodigo() == codigo) {
+				listaFuncionarios.get(i).exibir();
+			}
+		}
 	}
 	
 	public boolean inserirFuncionario(Funcionario f) throws FuncionarioExistente {
 		for(int i = 0; i < listaFuncionarios.size(); i++) {
 			if(listaFuncionarios.get(i).getCodigo() == f.getCodigo()) {
-				FuncionarioExistente e = new FuncionarioExistente("Funcionário código " + f.getCodigo() + " já existe.");
+				FuncionarioExistente e = new FuncionarioExistente("Funcionï¿½rio cï¿½digo " + f.getCodigo() + " jï¿½ existe.");
 				throw(e);
 			}
 		}
