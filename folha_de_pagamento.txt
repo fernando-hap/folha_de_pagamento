@@ -1,0 +1,5 @@
+EMPRESA: WeDeliver
+C�DIGO: 1 - NOME: Fernando - CARGO: Programador - SAL�RIO: 2400.0
+C�DIGO: 2 - NOME: Gustavo - CARGO: Analista - SAL�RIO: 4000.0
+C�DIGO: 3 - NOME: Henrique - CARGO: Gerente - SAL�RIO: 11000.0
+C�DIGO: 4 - NOME: Carlos - CARGO: Diretor - SAL�RIO: 30000.0

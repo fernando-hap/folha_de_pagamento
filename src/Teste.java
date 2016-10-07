@@ -16,6 +16,9 @@ public class Teste {
 		if(empresaInformatica.inserirGerente(henrique)) System.out.println("Gerente " + henrique.getNome() + " inserido");
 		Diretor carlos = new Diretor("Carlos", 4, 10000);
 		if(empresaInformatica.inserirDiretor(carlos)) System.out.println("Diretor " + carlos.getNome() + " inserido");
-		empresaInformatica.gerarFolha();		
+		empresaInformatica.gerarFolha();
+		String path = System.getProperty("user.dir");
+		String arquivoDeSaidaFolha = path + "/folha_de_pagamento.txt";
+		empresaInformatica.gerarFolhaEmArquivo(arquivoDeSaidaFolha);
 	}
 }

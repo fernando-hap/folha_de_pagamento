@@ -18,10 +18,25 @@ public abstract class Empresa implements Serializable {
 		this.listaFuncionarios = new ArrayList<>();
 	}
 	
+	public String getNome() {
+		return nome;
+	}
+	
 	public void gerarFolha() {
 		for(int i = 0; i < listaFuncionarios.size(); i++) {
 			listaFuncionarios.get(i).gerarContraCheque();
 		}
+	}
+	
+	public void gerarFolhaEmArquivo(String arquivo) {
+		List<String> folhaDePagamento = new ArrayList<String>();
+		folhaDePagamento.add("EMPRESA: " + nome);
+		for(int i=0; i< listaFuncionarios.size(); i++) {
+			Funcionario funcionario = listaFuncionarios.get(i);
+			String contraCheque = "C�DIGO: " + funcionario.getCodigo() + " - NOME: " + funcionario.getNome() + " - CARGO: " + funcionario.cargo() + " - SAL�RIO: " + funcionario.salario();
+			folhaDePagamento.add(contraCheque);
+		}
+		ImprimeEmArquivo.gerarFolhaPagamentoEmArquivo(arquivo, folhaDePagamento);
 	}
 	
 	public void exibirFuncionario(int codigo) {
